@@ -1,0 +1,32 @@
+.wrapper{
+    background-color: #041E40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.headerWrapper{
+    width: 1000px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    margin: 0 auto;
+}
+
+.headerImage{
+    height: 40px;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 16px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
