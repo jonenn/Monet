@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .wrapper{
     background-color: #041E40;
     display: flex;
@@ -29,4 +33,25 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+}
+
+.hero{
+    display: flex;
+    background-image: url(./images/Hero.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    opacity: 0.72;
+    height: 550px;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+/*.description{
+    border: 1px solid red;
+    margin: 300px;
+    height: 50px;
+    width: 50px;
 }
