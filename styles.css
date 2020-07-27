@@ -1,10 +1,12 @@
 body {
     margin: 0;
+    margin-top: 50px;
     height: 5000px;
     background-color: #F5F2F2;
+    color: #444444; 
 }
 
-.wrapper {
+.wrapper-01 {
     background-color: #041E40;
     display: flex;
     justify-content: space-between;
@@ -41,19 +43,19 @@ nav ul li a {
     display: flex;
     background-image: url(./images/Hero.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 600px;
     margin: 0;
-    padding: 0;
-    height: 570px;
     position: relative;
-    top: 50px;
     z-index: -1;
 }
 
 .description {
     padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     background: inherit;
     border-radius: 6px;
     position: absolute;
@@ -88,9 +90,91 @@ nav ul li a {
     text-transform: capitalize;
 }
 
-.bio {
-    
+.wrapper-02 {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
+.cardL {
+    display: flex;
+    height: 200px;
+    border-radius: 6px;
+    margin-top: 90px;
+    margin-left: 100px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+    -moz-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+    box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+}
 
+.cardL-img {
+    height: 300px;
+    margin-top: -50px;
+    margin-left: -100px;
+    border-radius: 150px;
+    float: left;
+}
 
+.cardL-content {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 51px;
+    width: inherit;
+    position: relative;
+}
+
+.cardL-content h1 {
+    font-family: Roboto;
+    font-size: 1.5em;
+}
+
+.cardL-signature {
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    height: 23.1px;
+}
+
+.cardR {
+    display: flex;
+    height: 200px;
+    border-radius: 6px;
+    margin-top: 90px;
+    margin-right: 100px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+    -moz-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+    box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+}
+
+.cardR-img {
+    height: 300px;
+    margin-top: -50px;
+    margin-right: -100px;
+    border-radius: 150px;
+    float: left;
+}
+
+.cardR-content {
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+    padding-left: 60px;
+    width: inherit;
+    position: relative;
+}
+
+.cardR-content h1 {
+    font-family: Roboto;
+    font-size: 1.5em;
+}
+
+.cardR-signature {
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    height: 23.1px;
