@@ -1,7 +1,6 @@
 body {
     margin: 0;
     margin-top: 50px;
-    height: 5000px;
     background-color: #F5F2F2;
     color: #444444; 
 }
@@ -98,83 +97,66 @@ nav ul li a {
 }
 
 .cardL {
-    display: flex;
-    height: 200px;
-    border-radius: 6px;
     margin-top: 90px;
     margin-left: 100px;
-    background-color: whitesmoke;
-    -webkit-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
-    -moz-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
-    box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
 }
 
 .cardL-img {
-    height: 300px;
-    margin-top: -50px;
     margin-left: -100px;
-    border-radius: 150px;
-    float: left;
 }
 
-.cardL-content {
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    padding-left: 51px;
-    width: inherit;
-    position: relative;
-}
-
-.cardL-content h1 {
-    font-family: Roboto;
-    font-size: 1.5em;
-}
-
-.cardL-signature {
-    position: absolute;
-    bottom: -10px;
-    right: 15px;
-    height: 23.1px;
-}
-
+.cardL, 
 .cardR {
     display: flex;
     height: 200px;
     border-radius: 6px;
-    margin-top: 90px;
-    margin-right: 100px;
     background-color: whitesmoke;
-    -webkit-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
-    -moz-box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
-    box-shadow: 0px 0px 36px -18px rgba(66,70,87,0.39);
+    box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
 }
 
-.cardR-img {
+.cardR {
+    margin: 90px;
+    margin-left: 0;
+}
+
+.cardR-img, 
+.cardL-img {
     height: 300px;
     margin-top: -50px;
-    margin-right: -100px;
     border-radius: 150px;
     float: left;
 }
 
+.cardR-img {
+    margin-right: -100px;
+}
+
+.cardL-content, 
 .cardR-content {
     padding: 20px;
     margin: 0;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-left: 60px;
     width: inherit;
     position: relative;
 }
 
+.cardL-content h1, 
 .cardR-content h1 {
     font-family: Roboto;
     font-size: 1.5em;
 }
 
+.cardL-signature, 
 .cardR-signature {
     position: absolute;
     bottom: -10px;
     right: 15px;
     height: 23.1px;
+}
+
+footer {
+    background-color: #363535;
+    color: #f5f5f7;
+}
