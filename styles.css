@@ -14,6 +14,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .headerWrapper {
@@ -154,6 +155,69 @@ nav ul li a {
     bottom: -10px;
     right: 15px;
     height: 23.1px;
+}
+
+.read-more {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #7283A6;
+    height: 60px; 
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.impressionism {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.separator {
+    border-style: solid;
+    border-width: 120px 0 0 103vw;
+    border-color: #F5F2F2 #7283A6;
+}
+
+.impressContainer {
+    margin-top: -3px;
+    background-color: #7283A6;
+    color: #f5f5f7;
+    padding-bottom: 30px;
+}
+
+.wrapper-03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.impressContent {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.impressContent h1 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.paintings {
+    background-color: #F5F2F2;
+    padding: 20px;
+}
+
+.paintings img {
+    width: 350px;
 }
 
 footer {
