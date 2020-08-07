@@ -46,7 +46,7 @@ nav ul li a {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
+    height: 660px;
     margin: 0;
     position: relative;
     z-index: -1;
@@ -129,7 +129,7 @@ nav ul li a {
 }
 
 .cardR-img {
-    margin-right: -100px;
+    margin-right: -90px;
 }
 
 .cardL-content, 
@@ -221,6 +221,15 @@ nav ul li a {
 }
 
 footer {
-    background-color: #363535;
-    color: #f5f5f7;
+    background-color: #7283A6;
+    color: #CCD4E0;
+    font-size: 12px;
+    margin-top: -1px;
+    padding-bottom: 33px;
+}
+
+.credits {
+    padding-top: 12px;
+    border-top: 1px solid;
+    margin: 12px auto;
 }
