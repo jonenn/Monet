@@ -97,7 +97,7 @@ ul li a:hover {
 }
 
 .wrapper-02 {
-    width: 870px;
+    max-width: 870px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -124,6 +124,7 @@ ul li a:hover {
 
 .cardR {
     margin: 90px;
+    margin-bottom: 0;
     margin-left: 0;
 }
 
@@ -163,18 +164,21 @@ ul li a:hover {
 
 .cardL-signature, 
 .cardR-signature {
-    position: absolute;
-    right: 15px;
-    height: 23.1px;
+    width: 105px;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: -.8em;
 }
 
-.cardL-signature {
-    bottom: -16.5px;
+.cardR-signature {
+    margin-left: auto;
+    margin-right: 250px;
 }
 
 .read-more {
     display: flex;
     margin: 0 auto;
+    margin-top: 90px;
     margin-bottom: 30px;
     border: 1px solid;
     border-radius: 30px;
@@ -251,6 +255,17 @@ footer {
     margin: 12px auto;
 }
 
+.menu {
+    display: none;
+}
+
+.burger-button {
+    width: 33px;
+    height: 4px;
+    background-color: #CBD2D0;
+    margin: 5px 0;
+}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 13px;
@@ -265,15 +280,24 @@ footer {
     }
 
     .wrapper-02 {
-        width: 660px;
+        max-width: 660px;
+    }
+
+    .cardR-img, 
+    .cardL-img {
+        height: 225px;
+        margin-top: -2%;
     }
 
     .cardL-content, 
     .cardR-content {
         padding: 10px 40px;
-        margin: auto 0;
         width: inherit;
         position: relative;
+    }
+
+    .cardR-signature {
+        margin-right: 185px;
     }
 }
 
@@ -292,15 +316,14 @@ footer {
 
     .cardL, 
     .cardR {
-        margin: 141px 75px;
+        margin: 0 12vw;
+        margin-top: 141px; 
         padding-bottom: 30px;
         flex-direction: column;
         height: auto;
     }
     
     .cardR {
-        margin-top: 0;
-        margin-bottom: 60px;
         padding-top: 123px;
         position: relative;
     }
@@ -327,11 +350,26 @@ footer {
 
     .cardR-signature,
     .cardL-signature {
-        bottom: -40px;
+        margin-left: auto;
+        margin-right: calc(12vw + 6px);
+        position: relative;
+        z-index: 1;
+    }
+
+    .read-more {
+        margin-top: 60px;
+    }
+
+    .separator {
+        border-width: 60px 0 0 103vw;
     }
 
     .impressContent {
         font-size: 13px;
+    }
+
+    .menu {
+        display: block;
     }
 }
 
