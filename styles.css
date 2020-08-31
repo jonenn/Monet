@@ -255,11 +255,11 @@ footer {
     margin: 12px auto;
 }
 
-.menu {
+.menu-mobile {
     display: none;
 }
 
-.burger-button {
+.burger-b {
     width: 33px;
     height: 4px;
     background-color: #CBD2D0;
@@ -302,6 +302,35 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .headerWrapper {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: auto;
+        padding: 0;
+        padding-top: 7px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 50px;
+        left: -100vw;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        background-color: rgba(2, 18, 38, .60);
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    ul, ul li {
+        display: block;
+        padding: 3px 0;
+    }
+
     .hero {
         height: 570px;
     }
@@ -340,9 +369,9 @@ footer {
 
     .cardR-img {
         position: absolute;
-        top: 0px;
         margin-left: auto;
         margin-right: auto;
+        top: 0px;
         left: 0;
         right: 0;
         text-align: center;
@@ -350,10 +379,7 @@ footer {
 
     .cardR-signature,
     .cardL-signature {
-        margin-left: auto;
-        margin-right: calc(12vw + 6px);
-        position: relative;
-        z-index: 1;
+        display: none;
     }
 
     .read-more {
@@ -368,8 +394,11 @@ footer {
         font-size: 13px;
     }
 
-    .menu {
+    .menu-mobile {
         display: block;
+        position: fixed;
+        top: 9px;
+        z-index: 2;
     }
 }
 
