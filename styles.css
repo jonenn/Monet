@@ -39,6 +39,7 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #f5f5f7;
+    padding-left: 18px;
 }
 
 ul li a:hover {
@@ -49,28 +50,26 @@ ul li a:hover {
     display: flex;
     background-image: url(./images/Hero.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 660px;
     margin: 0;
+    margin-bottom: 30px;
     position: relative;
     z-index: -1;
 }
 
 .description {
-    padding: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 30px 60px;
     background: inherit;
     border-radius: 15px;
     position: absolute;
     overflow: hidden;
+    align-items: center;
     top: 65%;
     right: 7%;
     z-index: -1;
-    margin-left: auto;
-    margin-right: auto;
     text-align: right;
     color: white;
 }
@@ -79,19 +78,20 @@ ul li a:hover {
     content: " ";
     background: inherit;
     position: absolute;
-    width: calc(auto+50px);
-    height: calc(auto+50px);
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    background: inherit;
+    padding: -10px;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: -1;
     box-shadow: inset 0 0 0 200px rgba(255, 255, 255, .25);
     filter: blur(10px);
-    z-index: -1;
 }
 
 .description h1 {
     margin: 0;
+    padding-top: .9em;
     font-family: 'Nunito', sans-serif;
     text-transform: capitalize;
 }
@@ -275,6 +275,10 @@ footer {
         padding: 0 40px;
     }
 
+    ul li a {
+        padding-left: 0;
+    }
+
     .description {
         top: 73%;
     }
@@ -310,6 +314,10 @@ footer {
         padding-top: 7px;
     }
 
+    .hero {
+        height: 510px;
+    }
+
     .menu {
         position: absolute;
         top: 50px;
@@ -319,7 +327,7 @@ footer {
         font-size: 14px;
         background-color: rgba(2, 18, 38, .60);
         transition-duration: .3s;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
     }
 
     .menu.active {
@@ -336,7 +344,10 @@ footer {
     }
 
     .description {
+        padding: 30px 42px;
         top: 70%;
+        right: 12vw;
+        left: 12vw;
     }
 
     .wrapper-02 {
@@ -400,8 +411,26 @@ footer {
         top: 9px;
         z-index: 2;
     }
+
+    .menu-mobile:active {
+        filter: brightness(60%);
+    }
 }
 
-@media screen and (max-width: 320px) {
+    @media screen and (max-width: 320px) {
+        .headerImage {
+            height: 36px;
+        }
 
+        .hero {
+            height: 420px;
+        }
+        
+        .description {
+            padding: 18px 24px;
+            top: auto;
+            left: 5vw;
+            right: 5vw;
+            bottom: 4%;
+    }
 }
