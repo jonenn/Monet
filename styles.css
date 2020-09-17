@@ -1,27 +1,27 @@
 body {
+    width: 100%;
     margin: 0;
     margin-top: 50px;
     background-color: #F5F2F2;
     color: #5C5C5C;
-    width: 100%;
 }
 
 .wrapper-01 {
-    background-color: #041E40;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     height: 50px;
     width: 100vw;
+    background-color: #041E40;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
 .headerWrapper {
-    width: 1000px;
     display: inherit;
+    width: 1000px;
     justify-content: inherit;
     align-items: inherit;
     margin: 0 auto;
@@ -55,7 +55,6 @@ ul li a:hover {
     background-attachment: fixed;
     height: 660px;
     margin: 0;
-    margin-bottom: 30px;
     position: relative;
     z-index: -1;
 }
@@ -74,7 +73,7 @@ ul li a:hover {
     color: white;
 }
 
-.description::after {
+.description::before {
     content: " ";
     background: inherit;
     position: absolute;
@@ -96,44 +95,45 @@ ul li a:hover {
 }
 
 .wrapper-02 {
+    display: flex;
     max-width: 870px;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
 }
 
-.welcome {
-    margin: 4em .5vw;
-    margin-bottom: 6em;
+.init {
+    position: relative;
+    margin: 72px 9vh;
     font-family: 'Nunito', sans-serif;
-}
-
-.welcome h1, 
-.welcome h3, 
-.welcome h2 {
     text-align: center;
-    color: #5D7F8C;
+    color: #041E40;
 }
 
-.welcome h1 {
-    font-size: 3em;
-    margin-bottom: .5em;
+.init h1 {
+    margin-top: .5em;
+    margin-bottom: .4em;
+    font-size: 3.2em;
 }
 
-.welcome h2,
-.welcome h3 {
-    margin: 0;
-    font-weight: lighter;
+.read-more-01,
+.read-more-02 {
+    display: flex;
+    margin: 24px auto;
+    border: 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    height: 60px; 
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #041E40;
 }
 
 .cardL {
     margin-top: 30px;
     margin-left: 100px;
-}
-
-.cardL-img {
-    margin-left: -100px;
-}
+}    
 
 .cardL, 
 .cardR {
@@ -143,24 +143,18 @@ ul li a:hover {
     border-radius: 30px;
     background-color: whitesmoke;
     box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
-}
+}    
 
-.cardR {
-    margin: 90px;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.cardR-img, 
 .cardL-img {
+    margin-left: -100px;
+}    
+
+.cardL-img,
+.cardR-img {
     height: 300px;
     margin-top: -50px;
     border-radius: 150px;
-}
-
-.cardR-img {
-    margin-right: -90px;
-}
+}    
 
 .cardL-content, 
 .cardR-content {
@@ -168,7 +162,7 @@ ul li a:hover {
     margin: auto 0;
     width: inherit;
     position: relative;
-}
+}    
 
 .cardL-content h1, 
 .cardR-content h1 {
@@ -183,7 +177,7 @@ ul li a:hover {
     font-size: 12px;
     text-align: center;
     color: #B4BDD0;
-}
+}    
 
 .cardL-signature, 
 .cardR-signature {
@@ -191,40 +185,40 @@ ul li a:hover {
     margin-left: auto;
     margin-right: 25px;
     margin-top: -.8em;
-}
+}    
+
+.cardR {
+    margin: 90px;
+    margin-bottom: 0;
+    margin-left: 0;
+}    
+
+.cardR-img {
+    margin-right: -90px;
+}    
 
 .cardR-signature {
     margin-left: auto;
     margin-right: 250px;
-}
+}  
 
-.read-more {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 90px;
+.read-more-02 {
+    margin-top: 60px;
     margin-bottom: 30px;
-    border: 1px solid;
-    border-radius: 30px;
-    text-decoration: none;
     color: #7283A6;
-    height: 60px; 
-    width: 180px;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
 }
 
 .impressionism {
     display: flex;
     flex-direction: column;
-}
+}    
 
 .impressContainer {
     color: #f5f5f7;
     padding-bottom: 30px;
     background-color: transparent;
     position: relative;
-}
+}    
 
 .impressContainer::before {
     content: " ";
@@ -232,26 +226,26 @@ ul li a:hover {
     width: 100%;
     height: 100%;
     clip-path: polygon(0% 0%, 100% 120px, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 120px, 100% 100%, 0 100%);
     background-color: #7283A6;
 }
 
 .impressContent {
-    margin-top: 150px;
-    padding: 30px;
-    padding-top: 0;
+    margin-top: 60px;
     position: relative;
     font-size: 18px;
+    color: #F5F2F2;
     text-align: center;
 }
 
 .impressContent h1 {
     font-size: 2em;
-    margin-top: 0;
 }
 
 .contact {
-    text-align: center;
+    margin-top: 15px;
     padding-bottom: 18px;
+    text-align: center;
     position: relative;
 }
 
@@ -275,7 +269,7 @@ ul li a:hover {
     color: #CCD4E0;
 }
 
-.emailSend {
+.sendForm {
     height: 26px;
     width: 26px;
     margin-left: 6px;
@@ -288,21 +282,12 @@ ul li a:hover {
     box-sizing: border-box;
 }
 
-.emailSend:focus {
+.sendForm:focus {
     outline: none;
 }
 
-.emailSend:active {
+.sendForm:active {
     border-color: #CCD4E0;
-}
-
-.paintings {
-    padding: 20px;
-    padding-bottom: 0;
-}
-
-.paintings img {
-    width: 350px;
 }
 
 footer {
@@ -323,16 +308,9 @@ footer {
     display: none;
 }
 
-.burger-b {
-    width: 33px;
-    height: 4px;
-    background-color: #CBD2D0;
-    margin: 5px 0;
-}
-
 @media screen and (max-width: 767px) {
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .headerWrapper {
@@ -343,6 +321,10 @@ footer {
         padding-left: 0;
     }
 
+    .hero {
+        background-attachment: scroll;
+    }
+
     .description {
         top: 73%;
     }
@@ -351,8 +333,8 @@ footer {
         max-width: 660px;
     }
 
-    .cardR-img, 
-    .cardL-img {
+    .cardL-img, 
+    .cardR-img {
         height: 225px;
         margin-top: -2%;
     }
@@ -378,17 +360,13 @@ footer {
         padding-top: 7px;
     }
 
-    .hero {
-        height: 510px;
-    }
-
     .menu {
         position: absolute;
         top: 50px;
         left: -100vw;
         width: 100%;
         text-align: center;
-        font-size: 14px;
+        font-size: 15px;
         background-color: rgba(2, 18, 38, .60);
         transition-duration: .3s;
         transition-timing-function: ease-in;
@@ -400,7 +378,7 @@ footer {
 
     ul, ul li {
         display: block;
-        padding: 3px 0;
+        padding: .6em 0;
     }
     
     .hero {
@@ -418,15 +396,19 @@ footer {
         width: 100vw;
     }
 
-    .welcome {
+    .init {
+        margin-left: 9vh;
+        margin-right: 9vh;
         margin-bottom: 3vh;
     }
+
+    .init h1 {
+        font-size: 3em;
+    }
     
-    .welcome h2,
-    .welcome h3 {
+    .init h3 {
         margin: 0 1vw;
         font-weight: 600;
-        
     }
 
     .cardL, 
@@ -443,8 +425,8 @@ footer {
         position: relative;
     }
 
-    .cardR-img, 
-    .cardL-img {
+    .cardL-img, 
+    .cardR-img {
         margin: 0 auto;
         margin-top: -100px;
         width: 220px;
@@ -457,19 +439,15 @@ footer {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 0px;
+        top: 0;
         left: 0;
         right: 0;
         text-align: center;
     }
 
-    .cardR-signature,
-    .cardL-signature {
+    .cardL-signature,
+    .cardR-signature {
         display: none;
-    }
-
-    .read-more {
-        margin-top: 60px;
     }
 
     .impressContainer::before {
@@ -477,42 +455,67 @@ footer {
     }
 
     .impressContent {
-        margin-top: 90px;
-        font-size: 13px;
+        margin: 0 5vw;
+        margin-top: 10vw;
+        font-size: 14px;
     }
 
     .menu-mobile {
         display: block;
         position: fixed;
-        top: 9px;
+        top: 8px;
         z-index: 2;
     }
 
     .menu-mobile:active {
         filter: brightness(60%);
     }
+
+    .burger-b {
+        width: 33px;
+        height: 4px;
+        background-color: #F5F2F2;
+        margin: 5px 0;
+    }
 }
 
-    @media screen and (max-width: 320px) {
-        .headerImage {
-            height: 36px;
-        }
+@media screen and (max-width: 320px) {
+    .headerImage {
+        height: 36px;
+    }
 
-        .hero {
-            height: 420px;
-        }
-        
-        .description {
-            padding: 18px 24px;
-            top: auto;
-            left: 5vw;
-            right: 5vw;
-            bottom: 4%;
-        }
-        
-        .cardR,
-        .cardL {
-            margin-right: 5vw;
-            margin-left: 5vw;
-        }
+    .hero {
+        height: 420px;
+    }
+    
+    .description {
+        padding: 18px 36px;
+        top: auto;
+        left: 5vw;
+        right: 5vw;
+        bottom: 6%;
+    }
+    
+    .init h1{
+        font-size: 2em;
+    }
+
+    .read-more-01 {
+        margin-bottom: 2em;
+    }
+
+    .cardL,
+    .cardR {
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    .impressContainer::before {
+        clip-path: polygon(0% 0%, 100% 30px, 100% 100%, 0 100%);      
+    }
+
+    .impressContent {
+        margin-top: 72px;
+        font-size: 14px;
+    }
 }
