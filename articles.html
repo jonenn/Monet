@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Claude Monet</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="./images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+    </head>
+    <body>
+        <header>
+                <div class="menu-mobile">
+                    <div class="burger-b"></div>
+                    <div class="burger-b"></div>
+                    <div class="burger-b"></div>
+                </div>
+            <div class="wrapper-01">
+                <div class="headerWrapper">
+                    <a href="./index.html"><img class="headerImage" src="./images/Monet.png"></img></a>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./articles.html">Articles</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="backgroundArticle"></section>
+        <div class="wrapper-03">
+            <section class="content">
+                <p>1840 – 1926</p>
+                <h1>Oscar Claude Monet</h1>
+                <p>French painter and a founder of impressionism <br> His works, his life</p>
+            </section>
+        </div>
+            <section class="impressionism">
+                <section class="impressContainer">
+                    <div class="wrapper-02">
+                        <section class="impressContent">
+                            <h1>Impressionism</h1>
+                            <p>Impressionism is an art movement <i>en plein air</i> born in Paris, nineteenth century, in which the movements 
+                                come to be an essential part along with light dynamics instead of having an accurate depiction of the scene as usual.</p>
+                            <p>"<i><strong>Monet</strong>, with a scientific precision, has given us an unparalleled and unexcelled record of the 
+                                passing of time as seen in the movement of light over identical forms.</i>" Helen Gardner</p>
+                        </section>
+                        <section class="contact">
+                            <h3>Leave us your e-mail:</h3>
+                            <section class="send">
+                                <input class="email" type="email" placeholder="Your email adress">
+                                <input class="sendForm" type="button">
+                            </section>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <footer>
+                <div class="wrapper-02">
+                    <p class="by">Designed by Juan J. Malaver — 2020</p>
+                </div>
+            </footer>
+        <script>
+            const burger = document.querySelector(".menu-mobile");
+            burger.addEventListener("click", activate);
+            const menu = document.querySelector(".menu");
+
+
+            function activate() {
+                if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                } else
+                menu.classList.add("active");
+            }
+        </script>
+    </body>
+</html>

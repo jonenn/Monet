@@ -46,7 +46,8 @@ ul li a:hover {
     color: #CBD2D0;
 }
 
-.hero {
+.hero,
+.backgroundArticle {
     display: flex;
     background-image: url(./images/Hero.jpg);
     background-size: cover;
@@ -101,9 +102,16 @@ ul li a:hover {
     flex-direction: column;
 }
 
+.subwrapper {
+    display: inherit;
+    margin: 0 12px;
+    flex-direction: inherit;
+}
+
 .init {
     position: relative;
     margin: 72px 9vh;
+    margin-bottom: 5vw;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: #041E40;
@@ -140,7 +148,7 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     height: 200px;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: whitesmoke;
     box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
 }    
@@ -308,6 +316,41 @@ footer {
     display: none;
 }
 
+/* articles */
+.backgroundArticle{
+    height: calc(100vh - 50px);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0),
+        rgba(0,0,0,0),
+        rgba(0,0,0,0),
+        rgba(245, 242, 242, 1)
+      ), url(./images/article.jpg);
+      background-attachment: initial;
+    }
+    
+    .wrapper-03 {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .content {
+        margin-top: -240px;
+        border-radius: 15px;
+        padding: 48px;
+        height: 1500px;
+        background: whitesmoke;
+        box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
+}
+
+.articlesBody {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
@@ -394,6 +437,10 @@ footer {
     
     .wrapper-02 {
         width: 100vw;
+    }
+
+    .subwrapper {
+        margin: 0;
     }
 
     .init {
