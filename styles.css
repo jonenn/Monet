@@ -251,26 +251,24 @@ ul li a:hover {
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
     margin-top: 15px;
     padding-bottom: 18px;
-    text-align: center;
     position: relative;
-}
-
-.send {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .email {
     width: 200px;
     height: 24px;
+    margin: 0 auto;
+    text-align: center;
     outline: none;
     color: #f5f5f7;
     background-color: #8E9CB8;
     border: 0;
     border-radius: 6px;
-    text-align: center;
 }
 
 .email::placeholder {
@@ -280,9 +278,10 @@ ul li a:hover {
 .sendForm {
     height: 26px;
     width: 26px;
-    margin-left: 6px;
     border: 2px solid #8E9CB8;
     border-radius: 13px;
+    margin: 0 auto;
+    margin-top: 12px;
     background-color: transparent;
     background-image: url(./images/ico.png);
     background-size: cover;
@@ -317,7 +316,7 @@ footer {
 }
 
 /* articles */
-.backgroundArticle{
+.backgroundArticle {
     height: calc(100vh - 50px);
     background-image: linear-gradient(
         to bottom,
@@ -327,21 +326,44 @@ footer {
         rgba(0,0,0,0),
         rgba(245, 242, 242, 1)
       ), url(./images/article.jpg);
-      background-attachment: initial;
-    }
+    background-attachment: initial;
+}
     
-    .wrapper-03 {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .content {
-        margin-top: -240px;
-        border-radius: 15px;
-        padding: 48px;
-        height: 1500px;
-        background: whitesmoke;
-        box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
+.wrapper-03 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-title {
+    margin-top: -39%;
+    font-size: 42px;
+    color: #F5F2F2
+}
+
+.content {
+    border-radius: 15px;
+    padding: 2em;
+    background: whitesmoke;
+    box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
+}
+
+.content-info {
+    float: right;
+    margin-top: calc(-2em - 9px - .7em);
+    color: whitesmoke;
+}
+
+.content-info p {
+    font-size: .7rem;
+    margin: 6px 0;
+}
+
+.content-img {
+    float: left;
+    width: 200px;
+    margin-right: 1.25em;
+    margin-bottom: 1.25em;
+    border-radius: 3px;
 }
 
 .articlesBody {
