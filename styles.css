@@ -47,7 +47,7 @@ ul li a:hover {
 }
 
 .hero,
-.backgroundArticle {
+.background-bio {
     display: flex;
     background-image: url(./images/Hero.jpg);
     background-size: cover;
@@ -188,7 +188,8 @@ ul li a:hover {
 }    
 
 .cardL-signature, 
-.cardR-signature {
+.cardR-signature,
+.content-signature {
     width: 105px;
     margin-left: auto;
     margin-right: 25px;
@@ -221,14 +222,16 @@ ul li a:hover {
     flex-direction: column;
 }    
 
-.impressContainer {
+.impressContainer,
+.impressContainer-arti {
     color: #f5f5f7;
     padding-bottom: 30px;
     background-color: transparent;
     position: relative;
 }    
 
-.impressContainer::before {
+.impressContainer::before,
+.impressContainer-arti::before {
     content: " ";
     position: absolute;
     width: 100%;
@@ -316,7 +319,7 @@ footer {
 }
 
 /* articles */
-.backgroundArticle {
+.background-bio {
     height: calc(100vh - 50px);
     background-image: linear-gradient(
         to bottom,
@@ -329,27 +332,28 @@ footer {
     background-attachment: initial;
 }
     
-.wrapper-03 {
+.wrapper-03,
+.wrapper-03-arti {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .content-title {
     margin-top: -39%;
-    font-size: 42px;
+    font-size: 3em;
     color: #F5F2F2
 }
 
 .content {
     border-radius: 15px;
-    padding: 2em;
+    padding: 4em 2em;
     background: whitesmoke;
     box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
 }
 
 .content-info {
     float: right;
-    margin-top: calc(-2em - 9px - .7em);
+    margin-top: calc(-4em - 11px - .7em);
     color: whitesmoke;
 }
 
@@ -362,8 +366,19 @@ footer {
     float: left;
     width: 200px;
     margin-right: 1.25em;
-    margin-bottom: 1.25em;
+    margin-bottom: .25em;
     border-radius: 3px;
+}
+
+.content-subtitle {
+    margin: 0;
+    margin-bottom: .8em;
+    border-bottom: 1px solid;
+}
+
+.content-signature {
+    display: block;
+    margin-right: auto;
 }
 
 .articlesBody {
@@ -373,7 +388,11 @@ footer {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 767px) {
+.impressContainer-arti {
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
@@ -413,6 +432,31 @@ footer {
 
     .cardR-signature {
         margin-right: 185px;
+    }
+
+    /* Articles */
+
+    .content-title {
+        margin-top: -54%;
+    }
+
+    .content-img {
+        display: block;
+        float: none;
+        object-fit: cover;
+        object-position: top;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    .content-subtitle {
+        margin-top: 1em;
+    }
+
+    .wrapper-03-arti {
+        margin: 0 9vh;
     }
 }
 
@@ -519,7 +563,8 @@ footer {
         display: none;
     }
 
-    .impressContainer::before {
+    .impressContainer::before,
+    .impressContainer-arti::before {
         clip-path: polygon(0% 0%, 100% 60px, 100% 100%, 0 100%);      
     }
 
@@ -545,6 +590,16 @@ footer {
         height: 4px;
         background-color: #F5F2F2;
         margin: 5px 0;
+    }
+
+    /* Articles */
+    .content-title {
+        text-align: center;
+        margin-top: -120%;
+    }
+
+    .wrapper-03-arti {
+        margin: 0 8vw;
     }
 }
 
@@ -579,8 +634,9 @@ footer {
         margin-left: 5vw;
     }
 
-    .impressContainer::before {
-        clip-path: polygon(0% 0%, 100% 30px, 100% 100%, 0 100%);      
+    .impressContainer::before,
+    .impressContainer-arti::before {
+        clip-path: polygon(0% 0%, 100% 60px, 100% 100%, 0 100%);      
     }
 
     .impressContent {
