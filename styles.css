@@ -393,7 +393,7 @@ footer {
 .background-notPage {
     height: calc(100vh - 50px);
     background-image: url(./images/not-found.jpg);
-    background-position: bottom;
+    background-position: center;
 }
 
 .content-notPage {
