@@ -71,7 +71,7 @@ ul li a:hover {
     top: 65%;
     right: 7%;
     z-index: -1;
-    text-align: right;
+    text-align: center;
     color: white;
 }
 
@@ -97,6 +97,7 @@ ul li a:hover {
 }
 
 .wrapper-02 {
+    position: relative;
     display: flex;
     max-width: 870px;
     margin: 0 auto;
@@ -107,6 +108,19 @@ ul li a:hover {
     display: inherit;
     margin: 0 12px;
     flex-direction: inherit;
+}
+
+.subwrapper-bg {
+    position: absolute;
+    margin-left: -48px;
+    border-radius: 18px;
+    top: 54%;
+    height: 240px;
+    z-index: -1;
+    width: 66vw;
+    background-color: transparent;
+background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237283a6' fill-opacity='0.18'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
 }
 
 .init {
@@ -151,7 +165,7 @@ ul li a:hover {
     height: 200px;
     border-radius: 15px;
     background-color: whitesmoke;
-    box-shadow: 0 0 36px -18px rgba(66, 69, 84, .39);
+    box-shadow: 0 0 36px -18px rgba(66, 69, 84, 72%);
 }    
 
 .cardL-img {
@@ -263,10 +277,15 @@ ul li a:hover {
     text-align: center;
 }
 
+.send {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
 .email {
     width: 200px;
     height: 24px;
-    margin: 0 auto;
     text-align: center;
     outline: none;
     color: #f5f5f7;
@@ -284,8 +303,7 @@ ul li a:hover {
     width: 26px;
     border: 2px solid #8E9CB8;
     border-radius: 13px;
-    margin: 0 auto;
-    margin-top: 12px;
+    margin-left: 6px;
     background-color: transparent;
     background-image: url(./images/ico.png);
     background-size: cover;
@@ -426,6 +444,10 @@ footer {
 
     .wrapper-02 {
         max-width: 660px;
+    }
+
+    .subwrapper-bg {
+        display: none;
     }
 
     .cardL-img, 
@@ -634,11 +656,12 @@ footer {
     }
     
     .description {
+        font-size: .6rem;
         padding: 18px 36px;
         top: auto;
-        left: 5vw;
-        right: 5vw;
-        bottom: 6%;
+        left: 9vw;
+        right: 9vw;
+        bottom: 12%;
     }
     
     .init h1{
